@@ -1,0 +1,84 @@
+/* ===== 全站基础设置 ===== */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    background: #0b0c10;
+    color: white;
+}
+
+/* ===== 导航栏样式 ===== */
+nav {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #d9d9d9;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+/* 果冻 hover 效果 */
+nav a:hover {
+    color: white;
+    transform: scale(1.08);
+}
+
+/* ===== 页面容器 ===== */
+.container {
+    padding: 150px 12%;
+}
+
+/* ===== 标题样式 ===== */
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== 卡片（果冻风） ===== */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    transition: 0.35s;
+}
+
+.card:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* ===== 按钮（果冻按钮） ===== */
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+}
