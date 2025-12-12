@@ -1,3 +1,56 @@
+/* ===== 导航栏（苹果风全新升级） ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+    background: rgba(20, 20, 20, 0.35);
+    backdrop-filter: blur(25px) saturate(180%);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    z-index: 999;
+}
+
+/* 左边 LOGO（你的名字） */
+.nav-left {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+/* 右边菜单 */
+.nav-right a {
+    margin: 0 18px;
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+/* 鼠标移上去的果冻微动效（不娘，很科技） */
+.nav-right a:hover {
+    color: #ffffff;
+    transform: scale(1.11);
+}
+
+/* 手机适配（可选） */
+@media (max-width: 700px) {
+    .navbar {
+        padding: 0 20px;
+    }
+    .nav-right {
+        display: none;  /* 简单隐藏—未来可做折叠菜单 */
+    }
+}
+
 /* ===== 全站基础设置 ===== */
 body {
     margin: 0;
@@ -81,4 +134,7 @@ p {
 .button:hover {
     background: rgba(255, 255, 255, 0.25);
     transform: scale(1.05);
+}
+.container {
+    padding: 110px 12vw 60px; /* 顶部留出空间 */
 }
