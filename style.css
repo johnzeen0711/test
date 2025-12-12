@@ -134,7 +134,4 @@ p {
 .button:hover {
     background: rgba(255, 255, 255, 0.25);
     transform: scale(1.05);
-}
-.container {
-    padding: 110px 12vw 60px; /* 顶部留出空间 */
-}
+
